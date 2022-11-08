@@ -1,0 +1,38 @@
+<!-- Escaped json string saved to contact escaped_json_test -->
+<!-- Hardcoded for example -->
+{% set contact = crm_object("contact", 3401,"escaped_json_test") %}
+
+
+{% set order_object = contact.escaped_json_test|fromjson %}
+
+<br><br>
+<h1>Navigating json object</h1>
+<p>Order Status: {{order_object.order.status}}</p>
+<p>Order ID: {{order_object.order.orderId}}</p>
+<p>Example of how to set default value: {{order_object.sdafds|default("Hi, I'm a default value")}}</p>
+<p>Phone number: {{order_object.order.customerPhone.number}}</p>
+<p>Address name: {{order_object.order.shipTo.address.name.first}}{{order_object.order.shipTo.address.name.last}}</p>
+<p>Address: {{order_object.order.shipTo.address.street1}}{{order_object.order.shipTo.address.state}}</p>
+
+<h1>Iterating child relationships</h1>
+<table>
+	<thead>
+		<tr>
+      <th scope="col">Product name</th>
+			<th scope="col">sku</th>
+			<th scope="col">Cost</th>
+			<th scope="col">Final cost</th>
+		</tr>
+	</thead>
+	<tbody>
+    {% for item in order_object.order.items %}
+		<tr>
+      <td><a href="{{'https://google.com/products/%s'|format(item.itemId)}}">{{item.title}}</a></td>
+      <td>{{item.sku}}</td>
+
+			<td>${{item.price}}</td>
+			<td>${{item.total}}</td>
+		</tr>
+    {% endFor %}
+	</tbody>
+</table>
