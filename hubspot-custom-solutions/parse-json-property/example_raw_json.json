@@ -1,0 +1,215 @@
+{
+    "order": {
+        "_id": "6021f6b8bd6ce10008579e8e",
+        "tags": [],
+        "cartId": "5e4876e10cfe1d8902005d33",
+        "channel": 12,
+        "orderTotal": 125.33,
+        "taxTotal": 5.23,
+        "orderCurrency": "USD",
+        "status": "ORDER_CANCELLED",
+        "statusLog": "Order has been cancelled",
+        "customerUserId": "5e3598e3007c5e00080d2bb8",
+        "customerAccountId": "5e3598e3007c5e00080d2bb8",
+        "customerEmail": "ino@fabric.inc",
+        "customerPhone": {
+            "number": "555-555-5555",
+            "kind": "mobile"
+        },
+        "orderId": "8426-1549-34543",
+        "shipTo": [
+            {
+                "address": {
+                    "name": {
+                        "first": "john",
+                        "middle": "p",
+                        "last": "smith"
+                    },
+                    "phone": {
+                        "number": "555-555-5555",
+                        "kind": "mobile"
+                    },
+                    "isValidated": true,
+                    "email": "johnsmith@google.com",
+                    "street1": "10400 NE 4th St",
+                    "street2": "Suite 500",
+                    "city": "Bellevue",
+                    "state": "WA",
+                    "country": "USA",
+                    "zipCode": 98004,
+                    "kind": "Ship to address"
+                },
+                "delivery": {
+                    "actual": "string"
+                },
+                "shipping": {
+                    "actual": "string"
+                },
+                "promosApplied": [
+                    {
+                        "name": "test1"
+                    }
+                ],
+                "_id": "6021f6b8bd6ce10008579e8f",
+                "shipToId": 1000001,
+                "shipToType": "SHIP_TO_ADDRESS",
+                "price": 24.87,
+                "currency": "USD",
+                "estimatedTax": 10,
+                "committedTax": 10,
+                "total": 34.87,
+                "taxCode": "FR020000",
+                "shipmentCarrier": "Fedex",
+                "shipmentMethod": "Express",
+                "shipmentMethodId": 10000001,
+                "promisedDeliveryDate": "2019-12-14T00:00:00.000Z",
+                "shipmentInstructions": "Leave at back door",
+                "shipmentStatus": "Delivered",
+                "readyForPickups": [],
+                "id": "6021f6b8bd6ce10008579e8f"
+            }
+        ],
+        "items": [
+            {
+                "group": [
+                    123
+                ],
+                "promosApplied": [
+                    {
+                        "name": "test"
+                    }
+                ],
+                "_id": "6021f6b8bd6ce10008579e90",
+                "lineItemId": 1,
+                "itemId": 1000000051098,
+                "sku": 1538910,
+                "title": "abcDNA Luminous Cushion Lagoon",
+                "quantity": 1,
+                "price": 4.5,
+                "discount": 1,
+                "currency": "USD",
+                "shipToId": 1000001,
+                "estimatedTax": 10.25,
+                "committedTax": 10.25,
+                "total": 4.54,
+                "taxCode": "FR020000",
+                "weight": 10,
+                "weightUnit": "lb",
+                "id": "6021f6b8bd6ce10008579e90"
+            },
+            {
+                "group": [
+                    123
+                ],
+                "promosApplied": [
+                    {
+                        "name": "test"
+                    }
+                ],
+                "_id": "6021f6b8bd6ce10008579e90",
+                "lineItemId": 1,
+                "itemId": 1000000051098,
+                "sku": 2314213,
+                "title": "Test product 2",
+                "quantity": 2,
+                "price": 6.5,
+                "discount": 1,
+                "currency": "USD",
+                "shipToId": 1000001,
+                "estimatedTax": 10.25,
+                "committedTax": 10.25,
+                "total": 4.54,
+                "taxCode": "FR020000",
+                "weight": 10,
+                "weightUnit": "lb",
+                "id": "6021f6b8bd6ce10008579e90"
+            },
+            {
+                "group": [
+                    123
+                ],
+                "promosApplied": [
+                    {
+                        "name": "test"
+                    }
+                ],
+                "_id": "6021f6b8bd6ce10008579e90",
+                "lineItemId": 1,
+                "itemId": 1000000051098,
+                "sku": 2212,
+                "title": "Test Product 3",
+                "quantity": 1,
+                "price": 7,
+                "discount": 1,
+                "currency": "USD",
+                "shipToId": 1000001,
+                "estimatedTax": 10.25,
+                "committedTax": 10.25,
+                "total": 4.54,
+                "taxCode": "FR020000",
+                "weight": 10,
+                "weightUnit": "lb",
+                "id": "6021f6b8bd6ce10008579e90"
+            }
+        ],
+        "shipments": [],
+        "payments": [
+            {
+                "billToAddress": {
+                    "name": {
+                        "first": "john",
+                        "middle": "p",
+                        "last": "smith"
+                    },
+                    "phone": {
+                        "number": "555-555-5555",
+                        "kind": "mobile"
+                    },
+                    "isValidated": true,
+                    "email": "johnsmith@google.com",
+                    "street1": "10400 NE 4th St",
+                    "street2": "Suite 500",
+                    "city": "Bellevue",
+                    "state": "WA",
+                    "country": "USA",
+                    "zipCode": 98004,
+                    "kind": "Ship to address"
+                },
+                "shipToId": [
+                    1000001
+                ],
+                "_id": "6021f6b8bd6ce10008579e92",
+                "billToId": 1000001,
+                "paymentIdentifier": {
+                    "cardIdentifier": 4242
+                },
+                "paymentMethod": "Visa",
+                "paymentToken": {
+                    "token": 12345689
+                },
+                "paymentKind": "Default payment",
+                "amount": 533.33,
+                "currency": "USD",
+                "conversion": 1,
+                "paymentStatus": "Pending",
+                "id": "6021f6b8bd6ce10008579e92"
+            }
+        ],
+        "revision": 1,
+        "totalQuantity": 2,
+        "statusDescriptions": [
+            {
+                "_id": "614b25234a2b4e0009870c49",
+                "status": "ORDER_CANCELLED",
+                "code": 1001,
+                "description": "Merchant Out of Stock",
+                "date": "2021-09-22T12:44:19.703Z",
+                "id": "614b25234a2b4e0009870c49"
+            }
+        ],
+        "events": [],
+        "createdAt": "2021-02-09T02:43:04.926Z",
+        "updatedAt": "2021-09-22T12:44:19.696Z",
+        "__v": 0
+    }
+}
